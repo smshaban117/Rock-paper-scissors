@@ -34,18 +34,10 @@ function playRound(humanChoice, computerChoice){
 
 }
 
-function playGame() {
- console.log (playRound(getHumanChoice(), getComputerChoice()));
- console.log (playRound(getHumanChoice(), getComputerChoice()));
- console.log (playRound(getHumanChoice(), getComputerChoice()));
- console.log (playRound(getHumanChoice(), getComputerChoice()));
- console.log (playRound(getHumanChoice(), getComputerChoice()));
+const rock = document.querySelector("#rock")
+const paper = document.querySelector("#paper")
+const = scissors = document.querySelector("#scissors")
 
- console.log(`Final Score - You: ${humanScore}, Computer: ${computerScore}`);
-}
-
-
-console.log(playGame());
-
-
-
+rock.addEventListener("click", playRound)
+paper.addEventListener("click", playRound)
+scissors.addEventListener("click", playRound)
